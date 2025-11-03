@@ -1,0 +1,138 @@
+{
+  "info": {
+    "name": "ImageSearchApp - API",
+    "description": "Postman collection for MERN + OAuth Image Search App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "item": [
+    {
+      "name": "Auth - Google",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/auth/google",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth","google"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Auth - Github",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/auth/github",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth","github"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Auth - Facebook",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/auth/facebook",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth","facebook"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get current user",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Accept", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/auth/me",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth","me"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/auth/logout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth","logout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/search",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"term\": \"mountains\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/search",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api","search"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /api/top-searches",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/top-searches",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api","top-searches"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /api/history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/history",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api","history"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
